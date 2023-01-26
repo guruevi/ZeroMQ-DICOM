@@ -1,0 +1,14 @@
+version: '3'
+services:
+  server:
+    build: server/.
+    ports:
+      - "5555:5555"
+    volumes:
+      - ./watch:/watch
+  client1:
+    build: client/.
+  client2:
+    build: client/.
+  client3:
+    build: client/.
